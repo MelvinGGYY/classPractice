@@ -147,7 +147,49 @@ public class ClassWork{
                   System.out.println("2000rmb");
                   break;
                   default:
-                  break;  
+                  break;  }
         }
+
+
+        //Chapter 4 page82
+        //第一题，顺序逆序输出文字
+        String[] word = new String[]{"青","春","课","工","场"};
+        for(String w : word){
+            System.out.println(w);
+        }
+        for(var i=4;i>=0;i--){
+            System.out.println(word[i]);
+        }
+
+        //第二题，将原数组排序再输出
+        int[] array = new int[]{1,3,-1,5,-2};
+        Arrays.sort(array);
+        for(int nA : array){
+            system.out.println(nA);
+        }
+
+        //第三题，输入10个数字，1、2、3合法数字，其他非法，统计合法和非法数字的数量
+        int[] numArray = new int[10];
+        int corr=0;
+        int incorr=0;
+        for(int i=0;i<numArray.length;i++){
+            System.out.print("请输入10个数字:");
+            int num = input.nextInt();
+            if(num>=1&&num<=3){
+                corr++; 
+            }else{
+                incorr++;
+            }
+            numArray[i]= num;
+        }
+
+        System.out.print("输入的10个数字为：");
+        for(int n : numArray){
+            System.out.print(n+"\t");
+        }
+
+        System.out.println("合法数字个数为："+corr);
+        System.out.println("非法数字个数为："+incorr);
+
 }
 }
