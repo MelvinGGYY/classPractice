@@ -191,5 +191,12 @@ public class ClassWork{
         System.out.println("合法数字个数为："+corr);
         System.out.println("非法数字个数为："+incorr);
 
+        //Chapter 6 page124
+        //第一题
+        //答案：发工资啦，快买个苹果牌手机吧！直接设置了品牌属性苹果，调用了重构方法
+
+        //第二题
+        //第三题                                                                                                                                            
+
 }
 }
